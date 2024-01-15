@@ -452,5 +452,5 @@ def get_filtered_hotels():
 
 if __name__ == '__main__':
     print(app)
-    app.run(debug=True, port=27400)
+    app.run(debug=True, port=8000)
     #createHotelsTable()
