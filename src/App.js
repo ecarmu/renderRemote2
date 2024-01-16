@@ -13,6 +13,7 @@ import SearchResult from './components/SearchResults/SearchResult';
 import HotelDetail from './components/HotelDetail';
 
 function App() {
+  console.log("Path'e geldikkk")
   return (
     <Router>
       <div className='app_container'>
