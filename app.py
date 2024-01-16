@@ -9,8 +9,8 @@ CORS(app)  # Enable CORS for all routes
 print(app)
 
 @app.route('/')
-def helloWorld():
-    print("Hello World")
+def hello_world():
+    return "<p>Hello, World!</p>"
 
 
 if __name__ == '__main__':
