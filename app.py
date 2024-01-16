@@ -8,11 +8,11 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 print(app)
 
+'''
 @app.route('/')
 def hello_world():
     return "<p>Hello, World!</p>"
 
-'''
 # Your existing route for fetching hotels data
 @app.route('/api/hotels', methods=['GET'])
 def get_hotels():
@@ -34,12 +34,12 @@ def get_hotels():
 
     conn.close()
     return jsonify({'hotels': hotels})
-
+'''
 # Route to serve the React app
 @app.route('/')
 def index():
-    return render_template('frontend/build/index.html')
-'''
+    return render_template('build/index.html')
+
 
 if __name__ == '__main__':
     print(app)
