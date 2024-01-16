@@ -8,9 +8,9 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 print(app)
 
-@app.route('/'):
-def helloWorld:
-    print("Hello WOlrd"")
+@app.route('/')
+def helloWorld():
+    print("Hello World")
 
 
 if __name__ == '__main__':
